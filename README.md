@@ -4,17 +4,17 @@ Aplicativo de perguntas e respostas.
 
 # Documentação
 
-Os protótipos serão feitos utilizando a ferramenta [https://pencil.evolus.vn/](Pencil)
+Os protótipos serão feitos utilizando a ferramenta [Pencil](https://pencil.evolus.vn/)
 
 # Ferramentas
 
 * [Spring Tool Suite](https://spring.io/tools)
-* [https://www.mysql.com/products/workbench/](MySQL WorkBench)
-* [https://developer.android.com/studio](Android Studio)
-* [https://pencil.evolus.vn/](Pencil)
+* [MySQL WorkBench](https://www.mysql.com/products/workbench/)
+* [Android Studio](https://developer.android.com/studio)
+* [Pencil](https://pencil.evolus.vn/)
 
 # Arquitetura
 
-O Sistema Gerenciador de Banco de Dados (SGBD) será o [https://www.mysql.com/](MySQL).
+O Sistema Gerenciador de Banco de Dados (SGBD) será o [MySQL](https://www.mysql.com/).
 A interface gráfica do software será em um aplicativo Android e o *BackEnd* será feito em 
 [Spring Web](https://spring.io/)
