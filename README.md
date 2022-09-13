@@ -4,7 +4,7 @@ Aplicativo de perguntas e respostas.
 
 # Documentação
 
-Os protótipos serão feitos utilizando a ferramenta [Pencil](https://pencil.evolus.vn/)
+Os protótipos serão feitos utilizando a ferramenta [Pencil](https://pencil.evolus.vn/) ou [Figma](https://www.figma.com/).
 
 # Ferramentas
 
@@ -12,6 +12,7 @@ Os protótipos serão feitos utilizando a ferramenta [Pencil](https://pencil.evo
 * [MySQL WorkBench](https://www.mysql.com/products/workbench/)
 * [Android Studio](https://developer.android.com/studio)
 * [Pencil](https://pencil.evolus.vn/)
+* [Figma](https://www.figma.com/)
 
 # Arquitetura
 
