@@ -1,15 +1,15 @@
 package com.example.showdoespigao.model;
 
-public class Opcoes {
+public class Opcao {
     private Long id;
-    private String questao;
+    private Questao questao;
     private String descricao;
 
-    public Opcoes(){
+    public Opcao(){
 
     }
 
-    public Opcoes(Long id, String questao, String descricao) {
+    public Opcao(Long id, Questao questao, String descricao) {
         this.id = id;
         this.questao = questao;
         this.descricao = descricao;
@@ -23,11 +23,11 @@ public class Opcoes {
         this.id = id;
     }
 
-    public String getQuestao() {
+    public Questao getQuestao() {
         return questao;
     }
 
-    public void setQuestao(String questao) {
+    public void setQuestao(Questao questao) {
         this.questao = questao;
     }
 

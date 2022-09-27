@@ -4,13 +4,13 @@ public class Questao {
     private Long id;
     private String descricao;
     private Integer nivel;
-    private String opcao;
+    private Opcao opcao;
 
     public Questao(){
 
     }
 
-    public Questao(Long id, String descricao, Integer nivel, String opcao) {
+    public Questao(Long id, String descricao, Integer nivel, Opcao opcao) {
         this.id = id;
         this.descricao = descricao;
         this.nivel = nivel;
@@ -33,11 +33,11 @@ public class Questao {
         this.nivel = nivel;
     }
 
-    public String getOpcao() {
+    public Opcao getOpcao() {
         return opcao;
     }
 
-    public void setOpcao(String opcao) {
+    public void setOpcao(Opcao opcao) {
         this.opcao = opcao;
     }
 
