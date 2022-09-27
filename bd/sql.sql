@@ -25,6 +25,5 @@ ENGINE = InnoDB;
 
 
 
--- ALTER TABLE questoes ADD FOREIGN KEY (correta) REFERENCES respostas(id);
--- A inclusão da chave estrangeira não é permitida mesmo após a criação das duas tabelas
--- Error Code: 1005. Can't create table `espigao`.`questoes` (errno: 150 "Foreign key constraint is incorrectly formed")
+-- A inclusão da chave estrangeira não é permitida na criação pois a tabela não existe, por isso o uso do alter
+ALTER TABLE questoes ADD FOREIGN KEY (correta) REFERENCES opcoes(id);
