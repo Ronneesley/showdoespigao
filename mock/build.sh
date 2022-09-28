@@ -1,1 +1,1 @@
-sudo docker build -t showdoespigao-app .
+sudo docker build -t showdoespigao-mock-app .
