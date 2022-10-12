@@ -1,4 +1,5 @@
-FROM mysql
+FROM mysql:latest
 ENV MYSQL_ROOT_PASSWORD=123BANCO
 
-COPY ./questoes.sql /docker-entrypoint-initdb.d/questoes.sql
+COPY ./criacao.sql /docker-entrypoint-initdb.d/01_criacao.sql
+COPY ./questoes.sql /docker-entrypoint-initdb.d/02_questoes.sql
