@@ -1,5 +1,6 @@
 -- Geovanna
-use database show_do_espigao;
+use show_do_espigao;
+
 INSERT INTO questoes (descricao, nivel) VALUES ("Sobre diagrama de entidade-relacionamento (DER), marque a alternativa que
 NÃO apresenta um tipo de entidade", "1"); 
 INSERT INTO opcoes (questao, descricao) VALUES (1, "Entidade Fraca"),(1, "Entidade Associativa"),(1, "Entidade Agregada"),(1, "Entidade Composta");
@@ -141,7 +142,7 @@ UPDATE questoes SET resposta_correta =  110 WHERE id = 28;
 INSERT INTO questoes (descricao, nivel) VALUES ("Qual é a mídia portátil mais utilizada pelos usuários de computadores
 atualmente e que é utilizado por meio de uma porta USB?", "29");
 INSERT INTO opcoes (questao, descricao) VALUES (29, "Android"),(29, "Gabinete"),(29, "Disco Rígido (HD)"),(29, "Pen Drive");
-UPDATE questoes SET resposta_correta = 1z
+UPDATE questoes SET resposta_correta = 1;
 -- 116
 INSERT INTO questoes (descricao, nivel) VALUES ("Qual é a função das teclas de atalho CTRL+X, no programa Microsoft Word?", "30");
 INSERT INTO opcoes (questao, descricao) VALUES (30, "Colar um conteúdo copiado"),(30, "Salvar um documento"),(30, "Recortar o conteúdo selecionado"),(30, "Criar um novo documento");
