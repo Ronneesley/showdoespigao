@@ -199,8 +199,8 @@ INSERT INTO opcoes (questao, descricao) VALUES (34, "Outlook"),(34, "OneNote"),(
 UPDATE questoes SET correta = 135 WHERE id = 34;
 -- 136
 
------------------------------------------------------------------------------------------------------------------------------------------
-'''
+
+
 --Adriano:
 INSERT INTO questoes (descricao, nivel) VALUES ("Com referência à engenharia de testes e qualidade com foco na identificação de inconsistências entre o propósito de ferramentas de software e as características dos software em desenvolvimento, assinale a opção correta.", "35");
 INSERT INTO opcoes (questao, descricao) VALUES (35, "Para verificação da aderência do software aos estilos de programação normatizados na organização, devem-se utilizar comparadores de entrada e saída."),(35, "Para automação de testes de um software que possua grande número de requisitos associados ao acesso a documentos eletrônicos indexados, recomenda-se o uso de analisadores de fluxo de dados."),(35, "Para automação de testes de um software cuja entrada de dados seja, em sua maioria, de natureza algébrica, devem-se adotar simuladores de ambiente."),(35, "Para automação de testes de um software em desenvolvimento cujo uso será em condições de tempo-real, devem-se adotar sistemas de execução simbólica para simulação das condições operacionais reais.");
@@ -363,5 +363,4 @@ UPDATE questoes SET correta = 127 WHERE id = 66;
 INSERT INTO questoes (descricao, nivel) VALUES ("", "67");
 INSERT INTO opcoes (questao, descricao) VALUES (67, ""),(67, ""),(67, ""),(67, "");
 UPDATE questoes SET correta = 127 WHERE id = 67;
--- 272 https://questoes.grancursosonline.com.br/questoes-de-concursos/tecnologia-da-informacao-infraestrutura-de-ti'''
-------------------------------------------------------------------------------------------------------
+-- 272
