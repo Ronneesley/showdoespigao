@@ -1,9 +1,9 @@
 FROM ubuntu:latest
 
 #Atualiza a máquina
-RUN apt-get update ;
-	apt-get upgrade ;
-	apt-get install wget -y ;
+RUN apt-get update && \
+	apt-get upgrade && \
+	apt-get install wget -y
 
 #Instala o JDK
 WORKDIR /opt
@@ -23,7 +23,7 @@ RUN update-alternatives --install /usr/bin/mvn mvn `pwd`/mvn 0
 #Instala o showdoespigão na máquina
 RUN mkdir ~/projetos
 COPY showdoespigao-master ~/projetos
-WORKDIR ~/projejtos/showdoespigao-master
+WORKDIR ~/projetos/showdoespigao-master
 
 #Inicia o projeto
 RUN ./mvnw spring-boot:run
