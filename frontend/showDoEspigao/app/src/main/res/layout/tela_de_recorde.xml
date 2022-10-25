@@ -9,17 +9,17 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="match_parent"
-        android:layout_height="160dp"
-        android:layout_marginTop="20dp"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/logo" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_light"
         android:text="Melhores pontuações"
         android:textAlignment="center"
@@ -28,11 +28,12 @@
 
 
     <LinearLayout
-        android:layout_width="370dp"
+        android:layout_width="330dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginTop="15dp"
-        android:background="#42cc51"
+        android:background="@drawable/recorde_container"
+        android:backgroundTint="#42cc51"
         android:orientation="horizontal">
 
         <TextView
@@ -40,8 +41,12 @@
             android:layout_width="1dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
             android:layout_weight="1"
-            android:text="*" />
+            android:drawableStart="@drawable/ic_baseline_star_24"
+            android:drawablePadding="12sp"
+            android:maxWidth="1dp"
+            android:textAlignment="center" />
 
         <TextView
             android:id="@+id/textView8"
@@ -51,7 +56,8 @@
             android:layout_weight="1"
             android:shadowColor="#000"
             android:text="17 DE
-            AGOSTO" />
+            AGOSTO"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="182dp"
@@ -61,27 +67,35 @@
 
             <TextView
                 android:id="@+id/textView9"
-                android:layout_width="match_parent"
+                android:layout_width="170dp"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
                 android:shadowColor="#000"
                 android:text="R$ 1.583.350,00"
-                android:textSize="18dp" />
+                android:textAlignment="textStart"
+                android:textSize="18dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView10"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="170dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="30dp"
                 android:shadowColor="#000"
-                android:text="Melhor pontuação" />
+                android:text="Melhor pontuação"
+                android:textAlignment="textStart"
+                android:textDirection="inherit"
+                android:textStyle="bold" />
         </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="370dp"
+        android:layout_width="330dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginTop="15dp"
-        android:background="#dbb100"
+        android:background="@drawable/recorde_container"
+        android:backgroundTint="#dbb100"
         android:orientation="horizontal">
 
         <TextView
@@ -89,8 +103,10 @@
             android:layout_width="1dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
             android:layout_weight="1"
-            android:text="*" />
+            android:drawableStart="@drawable/ic_baseline_star_24"
+            android:drawablePadding="12sp" />
 
         <TextView
             android:id="@+id/textView12"
@@ -100,7 +116,8 @@
             android:layout_weight="1"
             android:shadowColor="#000"
             android:text="10 DE
-            AGOSTO" />
+            AGOSTO"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="182dp"
@@ -110,23 +127,25 @@
 
             <TextView
                 android:id="@+id/textView13"
-                android:layout_width="match_parent"
+                android:layout_width="170dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="12dp"
                 android:shadowColor="#000"
                 android:text="R$ 420.820,80"
-                android:textSize="18dp" />
+                android:textSize="18dp"
+                android:textStyle="bold" />
 
         </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="370dp"
+        android:layout_width="330dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginTop="15dp"
-        android:background="#FEE822"
+        android:background="@drawable/recorde_container"
+        android:backgroundTint="#FEE822"
         android:orientation="horizontal">
 
         <TextView
@@ -134,8 +153,10 @@
             android:layout_width="1dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
             android:layout_weight="1"
-            android:text="*" />
+            android:drawableStart="@drawable/ic_baseline_star_24"
+            android:drawablePadding="12sp" />
 
         <TextView
             android:id="@+id/textView16"
@@ -145,7 +166,8 @@
             android:layout_weight="1"
             android:shadowColor="#000"
             android:text="11 DE
-            JUNHO" />
+            JUNHO"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="182dp"
@@ -155,23 +177,25 @@
 
             <TextView
                 android:id="@+id/textView17"
-                android:layout_width="match_parent"
+                android:layout_width="170dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="12dp"
                 android:shadowColor="#000"
                 android:text="R$ 50.350,38"
-                android:textSize="18dp" />
+                android:textSize="18dp"
+                android:textStyle="bold" />
 
         </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="370dp"
+        android:layout_width="330dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginTop="15dp"
-        android:background="#DF7244"
+        android:background="@drawable/recorde_container"
+        android:backgroundTint="#DF7244"
         android:orientation="horizontal">
 
         <TextView
@@ -179,8 +203,10 @@
             android:layout_width="1dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
             android:layout_weight="1"
-            android:text="*" />
+            android:drawableStart="@drawable/ic_baseline_star_24"
+            android:drawablePadding="12sp" />
 
         <TextView
             android:id="@+id/textView20"
@@ -190,7 +216,8 @@
             android:layout_weight="1"
             android:shadowColor="#000"
             android:text="13 DE
-            JULHO" />
+            JULHO"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="182dp"
@@ -200,23 +227,25 @@
 
             <TextView
                 android:id="@+id/textView21"
-                android:layout_width="match_parent"
+                android:layout_width="170dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="12dp"
                 android:shadowColor="#000"
                 android:text="R$ 420.820,80"
-                android:textSize="18dp" />
+                android:textSize="18dp"
+                android:textStyle="bold" />
 
         </LinearLayout>
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="370dp"
+        android:layout_width="330dp"
         android:layout_height="50dp"
         android:layout_gravity="center"
         android:layout_marginTop="15dp"
-        android:background="#FB0F0E"
+        android:background="@drawable/recorde_container"
+        android:backgroundTint="#FB0F0E"
         android:orientation="horizontal">
 
         <TextView
@@ -224,8 +253,10 @@
             android:layout_width="1dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
             android:layout_weight="1"
-            android:text="*" />
+            android:drawableStart="@drawable/ic_baseline_star_24"
+            android:drawablePadding="12sp" />
 
         <TextView
             android:id="@+id/textView24"
@@ -235,7 +266,8 @@
             android:layout_weight="1"
             android:shadowColor="#000"
             android:text="13 DE
-            JULHO" />
+            JULHO"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="182dp"
@@ -245,13 +277,14 @@
 
             <TextView
                 android:id="@+id/textView25"
-                android:layout_width="match_parent"
+                android:layout_width="170dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="12dp"
                 android:shadowColor="#000"
                 android:text="R$ 20.820,80"
-                android:textSize="18dp" />
+                android:textSize="18dp"
+                android:textStyle="bold" />
 
         </LinearLayout>
     </LinearLayout>
