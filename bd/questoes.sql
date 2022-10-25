@@ -246,7 +246,7 @@ INSERT INTO opcoes (questao, descricao) VALUES (48, "python3 -V"),(48, "lib.pyth
 UPDATE questoes SET correta = 193 WHERE id = 48;
 -- 196 letra a 
 INSERT INTO questoes (descricao, nivel) VALUES ("Uma das estratégias para reduzir o tamanho de imagens Docker consiste em:", "49");
-INSERT INTO opcoes (questao, descricao) VALUES (49, "Combinar comandos RUN em um único comando;),(49, "Substituir a imagem base por uma versão mais recente;"),(49, "Separar comandos RUN complexos em comandos menores;"),(49, "Compactar arquivos a serem copiados para a imagem e descompactá-los durante a sua geração.");
+INSERT INTO opcoes (questao, descricao) VALUES (49, "Combinar comandos RUN em um único comando";),(49, "Substituir a imagem base por uma versão mais recente;"),(49, "Separar comandos RUN complexos em comandos menores;"),(49, "Compactar arquivos a serem copiados para a imagem e descompactá-los durante a sua geração.");
 UPDATE questoes SET correta = 197 WHERE id = 49;
 -- 200 letra a
 INSERT INTO questoes (descricao, nivel) VALUES ("Em computação, o que significa a sigla CPU e qual a sua utilidade?", "50");
@@ -326,7 +326,7 @@ INSERT INTO questoes (descricao, nivel) VALUES ("A partição Linux nativo é co
 INSERT INTO opcoes (questao, descricao) VALUES (62, "C:"),(62, "dir"),(62, "/."),(62, "/");
 UPDATE questoes SET correta = 127 WHERE id = 62;
 -- 252 letra d
-INSERT INTO questoes (descricao, nivel) VALUES (O Linux usa uma nomenclatura própria para identificar discos e partições, na seguinte nomenclatura “/dev/sda1” o que representa o número 1?", "63");
+INSERT INTO questoes (descricao, nivel) VALUES ("O Linux usa uma nomenclatura própria para identificar discos e partições, na seguinte nomenclatura “/dev/sda1” o que representa o número 1?", "63");
 INSERT INTO opcoes (questao, descricao) VALUES (63, "A quantidade de discos."),(63, "O número da partição no disco."),(63, "O diretório do Linux."),(63, "Quantas vezes foi regravado no disco.");
 UPDATE questoes SET correta = 254 WHERE id = 63;
 -- 256 letra B
