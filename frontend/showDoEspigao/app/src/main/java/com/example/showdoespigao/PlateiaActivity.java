@@ -39,12 +39,10 @@ public class PlateiaActivity extends AppCompatActivity {
 
     private void getData(){
         barArrayList = new ArrayList();
-        barArrayList.add(new BarEntry(2f, 10));
-        barArrayList.add(new BarEntry(3f, 20));
-        barArrayList.add(new BarEntry(4f, 30));
-        barArrayList.add(new BarEntry(5f, 40));
-        barArrayList.add(new BarEntry(6f, 50));
-        barArrayList.add(new BarEntry(7f, 60));
+        barArrayList.add(new BarEntry(2f, 11));
+        barArrayList.add(new BarEntry(3f, 13));
+        barArrayList.add(new BarEntry(4f, 63));
+        barArrayList.add(new BarEntry(5f, 13));
 
     }
 }
