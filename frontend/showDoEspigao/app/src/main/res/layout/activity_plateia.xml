@@ -21,13 +21,22 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="550dp"
         android:background="@color/material_dynamic_neutral_variant10">
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="179dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="550dp"
+            android:background="@drawable/ajuda_plateia"
+            android:text="Voltar" />
 
         <com.github.mikephil.charting.charts.BarChart
             android:id="@+id/barchart"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent" >
 
         </com.github.mikephil.charting.charts.BarChart>
 
