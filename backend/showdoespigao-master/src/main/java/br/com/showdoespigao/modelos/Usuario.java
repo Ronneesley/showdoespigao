@@ -28,15 +28,14 @@ public class Usuario {
     @Column(name =  "chave_autenticacao_google")
     private String chaveAutenticacaoGoogle;
     
-    @NotNull
+    //@NotNull
     @OneToMany
     private Set<Pontuacao> pontuacoes;
 
     public Usuario() {
     }
 
-    public Usuario(Long id, String nome, String senha, String chaveAutenticacaoGoogle) {
-        this.id = id;
+    public Usuario(String nome, String senha, String chaveAutenticacaoGoogle) {
         this.nome = nome;
         this.senha = senha;
         this.chaveAutenticacaoGoogle = chaveAutenticacaoGoogle;
