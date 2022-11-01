@@ -1,10 +1,10 @@
-package com.example.premio_atual;
+package com.example.showdoespigao;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class Premioatual_Activity extends AppCompatActivity {
+public class PremioAtualActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
