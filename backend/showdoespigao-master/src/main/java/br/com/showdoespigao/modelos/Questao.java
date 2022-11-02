@@ -72,5 +72,6 @@ public class Questao {
 	public void setOpcoes(Set<Opcao> opcoes) {
 		this.opcoes = opcoes;
 	}
+	
 
 }
