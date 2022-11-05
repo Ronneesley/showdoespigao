@@ -33,7 +33,6 @@
             android:background="@drawable/ajuda_plateia"
             android:text="Voltar" />
 
-<<<<<<< HEAD
 
         <com.github.mikephil.charting.charts.BarChart
             android:id="@+id/barchart"
@@ -43,15 +42,6 @@
          />
 
 
-=======
-        <com.github..chmikephilarting.charts.BarChart
-            android:id="@+id/barchart"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:ignore="MissingClass">
-
-        </com.github..chmikephilarting.charts.BarChart>
->>>>>>> 08e621a8414582da39e030402161d0bdc6d01c64
 
 
     </RelativeLayout>
