@@ -1,25 +1,41 @@
 package br.com.showdoespigao.modelos;
 
-import javax.persistence.*;
 import java.util.Set;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+
 @Entity
+@Table(name = "usuarios")
 public class Usuario {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    
+    @NotNull
     private String nome;
+    
+    @NotNull
     private String senha;
+    
+    @Column(name =  "chave_autenticacao_google")
     private String chaveAutenticacaoGoogle;
+    
+    //@NotNull
     @OneToMany
     private Set<Pontuacao> pontuacoes;
 
     public Usuario() {
     }
 
-    public Usuario(Long id, String nome, String senha, String chaveAutenticacaoGoogle) {
-        this.id = id;
+    public Usuario(String nome, String senha, String chaveAutenticacaoGoogle) {
         this.nome = nome;
         this.senha = senha;
         this.chaveAutenticacaoGoogle = chaveAutenticacaoGoogle;

@@ -8,7 +8,7 @@ import org.springframework.stereotype.Repository;
 import br.com.showdoespigao.modelos.Questao;
 
 @Repository
-public interface QuestaoRepository extends JpaRepository<Questao, Long>{
+public interface RepositorioQuestao extends JpaRepository<Questao, Long>{
 	Set<Questao> findByDescricaoContains(String descricao);
 	Set<Questao> findByNivel(Integer nivel);
 }

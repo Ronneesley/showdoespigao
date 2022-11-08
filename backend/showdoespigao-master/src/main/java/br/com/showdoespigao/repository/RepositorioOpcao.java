@@ -9,7 +9,7 @@ import br.com.showdoespigao.modelos.Opcao;
 import br.com.showdoespigao.modelos.Questao;
 
 @Repository
-public interface OpcaoRepository extends JpaRepository<Opcao, Long>{
+public interface RepositorioOpcao extends JpaRepository<Opcao, Long>{
 	Set<Opcao> findByQuestao(Questao questao);
 	Set<Opcao> findByDescricao(String descricao);
 }

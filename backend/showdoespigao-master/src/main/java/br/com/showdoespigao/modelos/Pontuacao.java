@@ -1,14 +1,18 @@
 package br.com.showdoespigao.modelos;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
 @Entity
+@Table(name = "pontuacoes")
 public class Pontuacao {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private Long pontuacao;
+    
+    @NotNull
     @ManyToOne
     private Usuario usuario;
 
