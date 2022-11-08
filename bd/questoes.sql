@@ -342,7 +342,140 @@ INSERT INTO questoes (descricao, nivel) VALUES ("Computação em grid é uma pla
 INSERT INTO opcoes (questao, descricao) VALUES (66, "Levando em consideração o uso de n-cores em CPUs, sim é correta a afirmativa"),(66, "Errado"),(66, "Certo"),(66, "Nenhuma das alternativas");
 UPDATE questoes SET correta = 267 WHERE id = 66;
 -- 268 letra C
-INSERT INTO questoes (descricao, nivel) VALUES ("", "67");
-INSERT INTO opcoes (questao, descricao) VALUES (67, ""),(67, ""),(67, ""),(67, "");
-UPDATE questoes SET correta = 127 WHERE id = 67;
--- 272
+-- Marcos Antonio
+INSERT INTO questoes (descricao, nivel) VALUES ("MySQL refere-se a:", "67");
+INSERT INTO opcoes (questao, descricao) VALUES (67, "tipo de linguagem"),(67, "tipo de invasão cibernético"),(67, "tipo de banco de dados"),(67, "sistema de engrenagem");
+UPDATE questoes SET resposta_correta = 271 WHERE id = 67;
+-- 272 letra C
+INSERT INTO questoes (descricao, nivel) VALUES ("Sistema binário, compreende:", "68");
+INSERT INTO opcoes (questao, descricao) VALUES (68, "1-0"),(68, "1-1"),(68, "0-1"),(68, "0-2");
+UPDATE questoes SET resposta_correta = 275 WHERE id = 68;
+-- 276 letra C
+INSERT INTO questoes (descricao, nivel) VALUES ("É o principal componente de um computador:", "69");
+INSERT INTO opcoes (questao, descricao) VALUES (69, "memória"),(69, "processador"),(69, "monitor"),(69, "usuário");
+UPDATE questoes SET resposta_correta = 278 WHERE id = 69;
+-- 280 LETRA B
+INSERT INTO questoes (descricao, nivel) VALUES ("O que são Dados?", "70");
+INSERT INTO opcoes (questao, descricao) VALUES (70, "partes de programas"),(70, "resquícios de arquivos corrompidos"),(70, "informações desencontradas"),(70, "informações desencontradas");
+UPDATE questoes SET resposta_correta = 281 WHERE id = 70;
+-- 284 LETRA A
+INSERT INTO questoes (descricao, nivel) VALUES ("Na falta de qual destes componentes, você não consegue utilizar um computador?", "71");
+INSERT INTO opcoes (questao, descricao) VALUES (71, "teclado"),(71, "placa-mãe"),(71, "mouse"),(71, "cabo de força");
+UPDATE questoes SET resposta_correta = 286 WHERE id = 71;
+-- 288 letra B
+INSERT INTO questoes (descricao, nivel) VALUES ("Unidade lógica:", "72");
+INSERT INTO opcoes (questao, descricao) VALUES (72, "disco velho"),(72, "disco vazio"),(72, "disco rígido"),(72, "nda");
+UPDATE questoes SET resposta_correta = 291 WHERE id = 72;
+-- 292 LETRA C
+INSERT INTO questoes (descricao, nivel) VALUES ("HD, ou simplesmente:", "73");
+INSERT INTO opcoes (questao, descricao) VALUES (73, "Winchester"),(73, "Hardcore"),(73, "Disco Fabulous"),(73, "Hard Disk");
+UPDATE questoes SET resposta_correta = 296 WHERE id = 73;
+-- 296 lETRA C
+INSERT INTO questoes (descricao, nivel) VALUES ("Quantos progamas o Microsoft Office 365 tem?", "74");
+INSERT INTO opcoes (questao, descricao) VALUES (74, "9 programas"),(74, "7 programas"),(74, "36 programas"),(74, "10 programas");
+UPDATE questoes SET resposta_correta = 297 WHERE id = 74;
+-- 300 letra A
+INSERT INTO questoes (descricao, nivel) VALUES ("Quais são os Dispositivos de entrada do computador?", "75");
+INSERT INTO opcoes (questao, descricao) VALUES (75, "Mouse e fone"),(75, "Mouse e Teclado"),(75, "Blu-ray"),(75, "Impressora e papel");
+UPDATE questoes SET resposta_correta = 302 WHERE id = 75;
+-- 304 letra B
+INSERT INTO questoes (descricao, nivel) VALUES ("Qual dessas peças é responsável pelo armazenamento de dados da máquina?", "76");
+INSERT INTO opcoes (questao, descricao) VALUES (76, "Hard Disk (HD)"),(76, "Placa-Mãe (MB)"),(76, "Processador (CPU)"),(76, "O gabinete");
+UPDATE questoes SET resposta_correta = 305 WHERE id = 76;
+-- 308 LETRA A
+INSERT INTO questoes (descricao, nivel) VALUES ("Qual desses Sistemas Operacionais é pertencente á Microsoft?", "77");
+INSERT INTO opcoes (questao, descricao) VALUES (77, "Windows"),(77, "Mac"),(77, "Linux"),(77, "Android");
+UPDATE questoes SET resposta_correta = 309 WHERE id = 77;
+-- 312 LETRA A
+INSERT INTO questoes (descricao, nivel) VALUES ("Quando desligamos o computador, este tipo de memória perde todos os dados:", "78");
+INSERT INTO opcoes (questao, descricao) VALUES (78, "DRAM"),(78, "SDRAM"),(78, "PROM"),(78, "RAM");
+UPDATE questoes SET resposta_correta = 316 WHERE id = 78;
+-- 316 LETRA D
+INSERT INTO questoes (descricao, nivel) VALUES ("No LINUX o comando MKDIR:", "79");
+INSERT INTO opcoes (questao, descricao) VALUES (79, "Lista arquivos"),(79, "Cria diretórios"),(79, "Cria arquivos vazios"),(79, "Criar usuário root");
+UPDATE questoes SET resposta_correta = 318 WHERE id = 79;
+-- 320 letra b
+INSERT INTO questoes (descricao, nivel) VALUES ("Não é um Sistema Operacional Linux:", "80");
+INSERT INTO opcoes (questao, descricao) VALUES (80, "Fedora"),(80, "Centos"),(80, "MAC OS"),(80, "Red Hat");
+UPDATE questoes SET resposta_correta = 323 WHERE id = 80;
+-- 324 letra c
+INSERT INTO questoes (descricao, nivel) VALUES ("O arquivo de configuração do Squid fica localizado:", "81");
+INSERT INTO opcoes (questao, descricao) VALUES (81, "/lib/squid/"),(81, "/var/squid/"),(81, "/home/squid"),(81, "/etc/squid");
+UPDATE questoes SET resposta_correta = 328 WHERE id = 81;
+-- 328 letra D
+INSERT INTO questoes (descricao, nivel) VALUES ("Qual versão do HTML é mais utilizado atualmente?", "82");
+INSERT INTO opcoes (questao, descricao) VALUES (82, "XHTML"),(82, "XHTML 2.0"),(82, "HTML 4"),(82, "HTML 5");
+UPDATE questoes SET resposta_correta = 332 WHERE id = 82;
+-- 332 letra D
+INSERT INTO questoes (descricao, nivel) VALUES ("No HTML a tag usada para negritar uma palavra?", "83");
+INSERT INTO opcoes (questao, descricao) VALUES (83, "<negrito>"),(83, "<bold>"),(83, "<b>"),(83, "<bng>");
+UPDATE questoes SET resposta_correta = 335 WHERE id = 83;
+-- 336 letra C
+INSERT INTO questoes (descricao, nivel) VALUES ("Programa utilizado para criação de Slides de apresentação é:", "84");
+INSERT INTO opcoes (questao, descricao) VALUES (84, "Excel"),(84, "Power Point"),(84, "Windows"),(84, "Access");
+UPDATE questoes SET resposta_correta = 338 WHERE id = 84;
+-- 340 LETRA B
+INSERT INTO questoes (descricao, nivel) VALUES ("São opções do Painel de Controle, exceto:", "85");
+INSERT INTO opcoes (questao, descricao) VALUES (85, "Vídeo"),(85, "Adicionar ou remover Hardware"),(85, "Adicionar ou remover Programas"),(85, "Mouse");
+UPDATE questoes SET resposta_correta = 341 WHERE id = 85;
+-- 344 Letra A
+INSERT INTO questoes (descricao, nivel) VALUES ("Qual extensão abaixo geralmente designa um arquivo de imagem?", "86");
+INSERT INTO opcoes (questao, descricao) VALUES (86, "MP2"),(86, "MP4"),(86, "JPEG"),(86, "3G2");
+UPDATE questoes SET resposta_correta = 347 WHERE id = 86;
+-- 348 LETRA C
+INSERT INTO questoes (descricao, nivel) VALUES ("O navegador exclusivo da Microsoft é o:", "87");
+INSERT INTO opcoes (questao, descricao) VALUES (87, "Firefox"),(87, "Internet Explorer"),(87, "Safari"),(87, "Chrome");
+UPDATE questoes SET resposta_correta = 350 WHERE id = 87;
+-- 352
+INSERT INTO questoes (descricao, nivel) VALUES ("O que significa a sigla PC?", "88");
+INSERT INTO opcoes (questao, descricao) VALUES (88, "PROCESSAMENTO COMPUTADORIZADO"),(88, "PLACA COMPACTA"),(88, "COMPUTADOR PESSOAL"),(88, "PROJETO CONJUNTO");
+UPDATE questoes SET resposta_correta = 355 WHERE id = 88;
+-- 356 LETRA C
+INSERT INTO questoes (descricao, nivel) VALUES ("Qual nome do formato de número R$ dentro do Microsoft Excel?", "89");
+INSERT INTO opcoes (questao, descricao) VALUES (89, "Contábil"),(89, "Moeda"),(89, "Texto"),(89, "Porcentagem");
+UPDATE questoes SET resposta_correta = 357 WHERE id = 89;
+-- 360 LETRA A
+INSERT INTO questoes (descricao, nivel) VALUES ("Qual a rede social que tem como ícone um fantasma?", "90");
+INSERT INTO opcoes (questao, descricao) VALUES (90, "Facebook"),(90, "Google"),(90, "Tinder"),(90, "Snapchat");
+UPDATE questoes SET resposta_correta = 364 WHERE id = 90;
+-- 364 LETRA D
+INSERT INTO questoes (descricao, nivel) VALUES ("Qual foi a primeira rede social da história da internet?", "91");
+INSERT INTO opcoes (questao, descricao) VALUES (91, "Classmate"),(91, "MySpace"),(91, "Orkut"),(91, "FaceAPP");
+UPDATE questoes SET resposta_correta = 365 WHERE id = 91;
+-- 368 letra A
+INSERT INTO questoes (descricao, nivel) VALUES ("Quando foi criado o primeiro smartphone da história?", "92");
+INSERT INTO opcoes (questao, descricao) VALUES (92, "1998"),(92, "2000"),(92, "1994"),(92, "2017");
+UPDATE questoes SET resposta_correta = 371 WHERE id = 92;
+-- 372 LETRA C
+INSERT INTO questoes (descricao, nivel) VALUES ("Qual a resolução de uma imagem Full HD?", "93");
+INSERT INTO opcoes (questao, descricao) VALUES (93, "2560 x 1440"),(93, "1920 x 1080"),(93, "1280 x 720"),(93, "256 x 144");
+UPDATE questoes SET resposta_correta = 374 WHERE id = 93;
+-- 376 LETRA B
+INSERT INTO questoes (descricao, nivel) VALUES ("Quantos Mb tem 1 GB?", "94");
+INSERT INTO opcoes (questao, descricao) VALUES (94, "1000MB"),(94, "1204MB"),(94, "1080MB"),(94, "1024MB");
+UPDATE questoes SET resposta_correta = 380 WHERE id = 94;
+-- 380 LETRA D
+INSERT INTO questoes (descricao, nivel) VALUES ("Qual a atual geração de processadores?", "95");
+INSERT INTO opcoes (questao, descricao) VALUES (95, "8º e 9º"),(95, "2º e 3º"),(95, "10º e 11º"),(95, "15º");
+UPDATE questoes SET resposta_correta = 381 WHERE id = 95;
+-- 384 letra A
+INSERT INTO questoes (descricao, nivel) VALUES ("Qual a função da memória?", "96");
+INSERT INTO opcoes (questao, descricao) VALUES (96, "Processar dados"),(96, "Exibir dados"),(96, "Armazenar dados"),(96, "Armazenar");
+UPDATE questoes SET resposta_correta = 387 WHERE id = 96;
+-- 388 LETRA C
+INSERT INTO questoes (descricao, nivel) VALUES ("Qual atalho de teclado significa RECORTAR?", "97");
+INSERT INTO opcoes (questao, descricao) VALUES (97, "CTRL + O"),(97, "CTRL + X"),(97, "CTRL + B"),(97, "CTRL + A");
+UPDATE questoes SET resposta_correta = 390 WHERE id = 97;
+-- 392 LETRA B
+INSERT INTO questoes (descricao, nivel) VALUES ("Dentre as alternativas a seguir, qual não faz parte de um item de hardware?", "98");
+INSERT INTO opcoes (questao, descricao) VALUES (98, "Mouse"),(98, "Caixa de Som"),(98, "Windows"),(98, "Placa mãe");
+UPDATE questoes SET resposta_correta = 395 WHERE id = 98;
+-- 396 LETRA C
+INSERT INTO questoes (descricao, nivel) VALUES ("O que é Windows da Microsoft?", "99");
+INSERT INTO opcoes (questao, descricao) VALUES (99, "Sistema operacional"),(99, "Driver"),(99, "Navegador de internet"),(99, "Pacote office");
+UPDATE questoes SET resposta_correta = 397 WHERE id = 99;
+-- 400 LETRA A
+INSERT INTO questoes (descricao, nivel) VALUES ("Software pré-gravado pelo fabricante da placa-mãe, colocado na memória ROM", "100");
+INSERT INTO opcoes (questao, descricao) VALUES (100, "placa-mãe"),(100, "firmware"),(100, "BIOS"),(100, "CMOS");
+UPDATE questoes SET resposta_correta = 402 WHERE id = 100;
+-- 404 LETRA B
