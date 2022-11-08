@@ -30,7 +30,11 @@ public class Questao {
 	
 	@OneToMany
 	private Set<Opcao> opcoes;
+	@OneToOne
+	private int opcaoCorreta;
 	
+
+
 	public Questao() {
 	}
 
@@ -72,6 +76,12 @@ public class Questao {
 	public void setOpcoes(Set<Opcao> opcoes) {
 		this.opcoes = opcoes;
 	}
-	
+		public int getOpcaoCorreta(Set<Opcao> opcaos) {
+		return opcaoCorreta;
+	}
+
+	public void setOpcaoCorreta(int opcaoCorreta) {
+		this.opcaoCorreta = opcaoCorreta;
+	}
 
 }

@@ -18,10 +18,11 @@ import com.fasterxml.jackson.core.sym.Name;
 @Table(name = "questoes")
 @Column(name = "resposta_correta")
 public class respostaCorreta {
+
     @Id
 	private Long id;
 	
-	@OneToMany
+	@OneToOne
 	private respostaCorreta opcoes;
 
     
@@ -46,7 +47,7 @@ public class respostaCorreta {
 	}
 
 	public void setrespostaCorreta(respostaCorreta opcoes) {
-		this.respostaCorreta = opcoes;
+		this.respostaCorreta = opcoesCorreta;
 	}
 
 }
