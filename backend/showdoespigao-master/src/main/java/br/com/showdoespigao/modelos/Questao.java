@@ -30,8 +30,11 @@ public class Questao {
 	
 	@OneToMany
 	private Set<Opcao> opcoes;
+
 	@OneToOne
-	private int opcaoCorreta;
+	@Column(name =  "resposta_correta")
+	private Opcao opcaoCorreta;
+	
 	
 
 
@@ -83,5 +86,7 @@ public class Questao {
 	public void setOpcaoCorreta(int opcaoCorreta) {
 		this.opcaoCorreta = opcaoCorreta;
 	}
+
+
 
 }
