@@ -45,4 +45,3 @@ public class Roleta {
         r.sortear();
     }
 }
-
