@@ -139,7 +139,7 @@ UPDATE questoes SET resposta_correta =  110 WHERE id = 28;
 INSERT INTO questoes (descricao, nivel) VALUES ("Qual é a mídia portátil mais utilizada pelos usuários de computadores
 atualmente e que é utilizado por meio de uma porta USB?", "29");
 INSERT INTO opcoes (questao, descricao) VALUES (29, "Android"),(29, "Gabinete"),(29, "Disco Rígido (HD)"),(29, "Pen Drive");
-UPDATE questoes SET resposta_correta = 116;
+UPDATE questoes SET resposta_correta = 116 WHERE id = 26;
 -- 116
 INSERT INTO questoes (descricao, nivel) VALUES ("Qual é a função das teclas de atalho CTRL+X, no programa Microsoft Word?", "30");
 INSERT INTO opcoes (questao, descricao) VALUES (30, "Colar um conteúdo copiado"),(30, "Salvar um documento"),(30, "Recortar o conteúdo selecionado"),(30, "Criar um novo documento");
@@ -317,7 +317,6 @@ INSERT INTO questoes (descricao, nivel) VALUES ("Computação em grid é uma pla
 INSERT INTO opcoes (questao, descricao) VALUES (66, "Levando em consideração o uso de n-cores em CPUs, sim é resposta_correta a afirmativa"),(66, "Errado"),(66, "Certo"),(66, "Nenhuma das alternativas");
 UPDATE questoes SET resposta_correta = 267 WHERE id = 66;
 -- 268 letra C
-<<<<<<< HEAD
 -- Marcos Antonio
 INSERT INTO questoes (descricao, nivel) VALUES ("MySQL refere-se a:", "67");
 INSERT INTO opcoes (questao, descricao) VALUES (67, "tipo de linguagem"),(67, "tipo de invasão cibernético"),(67, "tipo de banco de dados"),(67, "sistema de engrenagem");
@@ -454,9 +453,3 @@ UPDATE questoes SET resposta_correta = 397 WHERE id = 99;
 INSERT INTO questoes (descricao, nivel) VALUES ("Software pré-gravado pelo fabricante da placa-mãe, colocado na memória ROM", "100");
 INSERT INTO opcoes (questao, descricao) VALUES (100, "placa-mãe"),(100, "firmware"),(100, "BIOS"),(100, "CMOS");
 UPDATE questoes SET resposta_correta = 402 WHERE id = 100;
--- 404 LETRA B
-=======
-INSERT INTO questoes (descricao, nivel) VALUES ("", "67");
-INSERT INTO opcoes (questao, descricao) VALUES (67, ""),(67, ""),(67, ""),(67, "");
-UPDATE questoes SET resposta_correta = 127 WHERE id = 67;
->>>>>>> 9c2378c89ab8c3e57bf4f0709b383eef11142e37
