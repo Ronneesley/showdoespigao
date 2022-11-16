@@ -2,7 +2,7 @@
 import java.util.Random;
 
 
-public class Roleta {
+public class roleta {
     public double opA;
     public double opB;
     public double opC;
