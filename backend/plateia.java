@@ -1,4 +1,3 @@
-
 import java.util.Random;
 
 
@@ -49,8 +48,11 @@ public class roleta {
         }
         return sorteado;
     }
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
-        Roleta r = new Roleta();
+        roleta r = new roleta();
         r.setA(0.25);
         r.setB(0.25);
         r.setC(0.25);
@@ -78,5 +80,33 @@ public class roleta {
         System.out.println("Letra c " + c + " votos");
         System.out.println("Letra d " + d + " votos");
     }
-}
+        //verificar qual recebeu mais votos
+        public void resultado() {
+            char x = ' ';
+            if (a > b && a > c && a > d){
+                System.out.println("a");
+                x = 'a';
+            }else if (b>c && b>d){
+                System.out.println("b");
+                x = 'b';
+            }else if (c>d){
+                System.out.println("c");
+                x = 'c';
+            }else {
+                System.out.println("d");
+                x = 'd';
+            }
+            System.out.println(x);
+        
+        // selecionar a opção com mais votos
+        char resultado = resultado();
+        System.out.println(resultado);
+        //mapear a seleção em 
+        /*public char opinar(){
+            System.out.println(opinar+"é a escolha");
 
+        }    
+         */
+        //Map<resultado, char> resultado = opinar();
+    }
+}
