@@ -1,107 +1,81 @@
+package br.com.showespigao.modelo.bo;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-
-public class roleta {
-    public double opA;
-    public double opB;
-    public double opC;
-    public double opD;
-    public double getOpA() {
-        return opA;
-    }
-    public double getOpB() {
-        return opB;
-    }
-    public double getOpC() {
-        return opC;
-    }
-    public double getOpD() {
-        return opD;
-    }
-    public void setA(double a) { 
-        this.opA = a; 
-    }
-    public void setB(double b) { 
-        this.opB = b; 
-    }
-    public void setC(double c) {
-        this.opC = c;
-    }
-    public void setD(double d) {
-        this.opD = d;
-    }
+public class PlateiaBO {
     
-    public char sortear() {
-        char sorteado = ' ';
-        Random rand = new Random();
-        char[] possibilidades = {'a', 'b', 'c', 'd'};
-        double[] probabilidades = {opA, opB, opC, opD};
-        double total = 0;
-        double chanceSorteada = rand.nextDouble();
-        for (int j = 0; j < possibilidades.length; j++) {
-            total += probabilidades[j];
-            if (chanceSorteada <= total) {
-                //System.out.println(possibilidades[j]);
-                sorteado = possibilidades[j];
-                break;
-            }
-        }
-        return sorteado;
+    private int quantidadeMembros = 100;
+    
+    private double probabilidadeAcerto = 0.45;
+    
+    private int respostaCerta = 0;
+    
+    public PlateiaBO(int quantidadeMembros, double probabilidadeAcerto, int respostaCerta) {
+        this.quantidadeMembros = quantidadeMembros;
+        this.probabilidadeAcerto = probabilidadeAcerto;
+        this.respostaCerta = respostaCerta;
     }
+
     /**
-     * @param args
+     * Sorteia a opção escolhida pela plateia
+     * @param qtde quantidade de pessoas na plateia
+     * @return 
      */
-    public static void main(String[] args) {
-
+    public int[] sortear() {
+        RoletaBO r = new RoletaBO();
+        double percentualDemais = (1D - probabilidadeAcerto) / 3;
         
-         System.out.println("Letra a " + resultado() + " votos");
-        //System.out.println("Letra b " + b + " votos");
-       // System.out.println("Letra c " + c + " votos");
-        //System.out.println("Letra d " + d + " votos");
-
+        double percentuais[] = {percentualDemais, percentualDemais, percentualDemais, percentualDemais};
+        percentuais[respostaCerta] = probabilidadeAcerto;
         
-        
-    }
+        r.setA(percentuais[0]);
+        r.setB(percentuais[1]);
+        r.setC(percentuais[2]);
+        r.setD(percentuais[3]);
 
-    public static int resultado() {
+        int[] sorteio = new int[]{0, 0, 0, 0};
 
-        roleta r = new roleta();
-        r.setA(0.25);
-        r.setB(0.25);
-        r.setC(0.25);
-        r.setD(0.25);
-
-        int a = 0;
-        int b = 0;
-        int c = 0;
-        int d = 0;
-        char l;
-        for (int i = 0; i < 100; i++) {
-            l = r.sortear();
-            if (l == 'a') {
-                a += 1;
-            } else if (l == 'b') {
-                b += 1;
-            } else if (l == 'c') {
-                c += 1;
-            } else if (l == 'd') {
-                d += 1;
-            }
+        for (int i = 0; i < getQuantidadeMembros(); i++) {
+            sorteio[r.sortear() - 1]++;
         }
 
-        
-
-        int[] result =  int[]{a,b,c,d};
-
-        return result;
-        
-
-        
-}
-
+        return sorteio;
+    }
     
-   // System.out.println("Letra a " + a + " votos");      
-      
+    public static void main(String[] args) {
+        PlateiaBO bo = new PlateiaBO(100, 0.45, 2);
+        int[] sorteado = bo.sortear();
+        
+        System.out.println("A: " + sorteado[0]);
+        System.out.println("B: " + sorteado[1]);
+        System.out.println("C: " + sorteado[2]);
+        System.out.println("D: " + sorteado[3]);
+        System.out.println("TOTAL: " + (sorteado[0] + sorteado[1] + sorteado[2] + sorteado[3]));
+    }
+
+    public int getQuantidadeMembros() {
+        return quantidadeMembros;
+    }
+
+    public void setQuantidadeMembros(int quantidadeMembros) {
+        this.quantidadeMembros = quantidadeMembros;
+    }
+
+    public double getProbabilidadeAcerto() {
+        return probabilidadeAcerto;
+    }
+
+    public void setProbabilidadeAcerto(double probabilidadeAcerto) {
+        this.probabilidadeAcerto = probabilidadeAcerto;
+    }
+
+    public int getRespostaCerta() {
+        return respostaCerta;
+    }
+
+    public void setRespostaCerta(int respostaCerta) {
+        this.respostaCerta = respostaCerta;
+    }
 }
