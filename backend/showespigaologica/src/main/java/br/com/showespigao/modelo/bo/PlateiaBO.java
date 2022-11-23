@@ -1,7 +1,9 @@
+package br.com.showespigao.modelo.bo;
+
 import java.util.Random;
 
 
-public class roleta {
+public class PlateiaBO {
     public double opA;
     public double opB;
     public double opC;
@@ -52,7 +54,7 @@ public class roleta {
      * @param args
      */
     public static void main(String[] args) {
-        roleta r = new roleta();
+        PlateiaBO r = new PlateiaBO();
         r.setA(0.25);
         r.setB(0.25);
         r.setC(0.25);

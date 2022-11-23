@@ -1,6 +1,8 @@
+package br.com.showespigao.modelo.bo;
+
 import java.util.Random;
 
-public class Roleta {
+public class RoletaBO {
     public double opA;
     public double opB;
     public double opC;
@@ -36,7 +38,7 @@ public class Roleta {
         return sorteado;
     }
     public static void main(String[] args) {
-        Roleta r = new Roleta();
+        RoletaBO r = new RoletaBO();
         r.setA(0.10);
         r.setB(0.70);
         r.setC(0.10);

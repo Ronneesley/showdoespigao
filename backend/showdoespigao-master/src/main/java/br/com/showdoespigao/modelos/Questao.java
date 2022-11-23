@@ -2,11 +2,13 @@ package br.com.showdoespigao.modelos;
 
 import java.util.Set;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
@@ -17,7 +19,6 @@ import com.fasterxml.jackson.core.sym.Name;
 @Entity
 @Table(name = "questoes")
 public class Questao {
-	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
@@ -34,9 +35,6 @@ public class Questao {
 	@OneToOne
 	@Column(name =  "resposta_correta")
 	private Opcao opcaoCorreta;
-	
-	
-
 
 	public Questao() {
 	}
@@ -79,14 +77,12 @@ public class Questao {
 	public void setOpcoes(Set<Opcao> opcoes) {
 		this.opcoes = opcoes;
 	}
-		public int getOpcaoCorreta(Set<Opcao> opcaos) {
+	
+	public Opcao getOpcaoCorreta(Set<Opcao> opcaos) {
 		return opcaoCorreta;
 	}
 
-	public void setOpcaoCorreta(int opcaoCorreta) {
+	public void setOpcaoCorreta(Opcao opcaoCorreta) {
 		this.opcaoCorreta = opcaoCorreta;
 	}
-
-
-
 }
