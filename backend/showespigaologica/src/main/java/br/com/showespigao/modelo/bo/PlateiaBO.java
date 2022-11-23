@@ -1,9 +1,9 @@
-package br.com.showespigao.modelo.bo;
-
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 
-public class PlateiaBO {
+public class roleta {
     public double opA;
     public double opB;
     public double opC;
@@ -54,7 +54,20 @@ public class PlateiaBO {
      * @param args
      */
     public static void main(String[] args) {
-        PlateiaBO r = new PlateiaBO();
+
+        
+         System.out.println("Letra a " + resultado() + " votos");
+        //System.out.println("Letra b " + b + " votos");
+       // System.out.println("Letra c " + c + " votos");
+        //System.out.println("Letra d " + d + " votos");
+
+        
+        
+    }
+
+    public static int resultado() {
+
+        roleta r = new roleta();
         r.setA(0.25);
         r.setB(0.25);
         r.setC(0.25);
@@ -77,38 +90,18 @@ public class PlateiaBO {
                 d += 1;
             }
         }
-        System.out.println("Letra a " + a + " votos");
-        System.out.println("Letra b " + b + " votos");
-        System.out.println("Letra c " + c + " votos");
-        System.out.println("Letra d " + d + " votos");
-    }
-        //verificar qual recebeu mais votos
-        public void resultado() {
-            char x = ' ';
-            if (a > b && a > c && a > d){
-                System.out.println("a");
-                x = 'a';
-            }else if (b>c && b>d){
-                System.out.println("b");
-                x = 'b';
-            }else if (c>d){
-                System.out.println("c");
-                x = 'c';
-            }else {
-                System.out.println("d");
-                x = 'd';
-            }
-            System.out.println(x);
-        
-        // selecionar a opção com mais votos
-        char resultado = resultado();
-        System.out.println(resultado);
-        //mapear a seleção em 
-        /*public char opinar(){
-            System.out.println(opinar+"é a escolha");
 
-        }    
-         */
-        //Map<resultado, char> resultado = opinar();
-    }
+        
+
+        int[] result =  int[]{a,b,c,d};
+
+        return result;
+        
+
+        
+}
+
+    
+   // System.out.println("Letra a " + a + " votos");      
+      
 }
