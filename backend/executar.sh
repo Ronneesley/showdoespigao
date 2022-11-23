@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo docker run --name showespigao-ubuntu1 -rm -i -t showespigao-ubuntu
+sudo docker run --name showespigao-ubuntu -rm -i -t showespigao-ubuntu

@@ -22,11 +22,14 @@ WORKDIR /opt/apache-maven-3.8.6/bin
 RUN update-alternatives --install /usr/bin/mvn mvn `pwd`/mvn 0
 
 #Instala o showdoespigão na máquina
-RUN mkdir projetos
-COPY showdoespigao-master ~/projetos
-WORKDIR ~/projetos/showdoespigao-master
+WORKDIR /opt
+COPY showdoespigao-master /opt/showdoespigao-master
+WORKDIR /opt/showdoespigao-master
 
 #Inicia o projeto
-RUN cd /apache-maven-3.8.6; ls -la
-# RUN ./mvn spring-boot:run
+WORKDIR /opt/showdoespigao-master
+
+RUN chmod +x mvnw
+RUN chmod +x bin/mvnw
+RUN ./mvnw spring-boot:run
 
