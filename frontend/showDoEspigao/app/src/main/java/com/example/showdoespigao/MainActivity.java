@@ -17,5 +17,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.tela_de_recorde);
 
         setContentView(R.layout.tela_apos_login);
+
+        setContentView(R.layout.tela_quiz);
     }
 }
