@@ -1,0 +1,95 @@
+@import "@font/nunito";
+* {
+    font-family: var ( --fontFamily-nunito);
+}
+
+.user {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.senha {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+fieldset {
+    background-color: #A7C0DC;
+    width: 300px;
+    height: 250px;
+}
+
+button {
+    background-color: #d9d9d9;
+    font: var(--fontFamily-nunito);
+    font-style: normal;
+    margin-top: 15px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    line-height: 30px;
+    padding-right: 9px;
+}
+
+.select {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    width: 30vw;
+    height: 7vh;
+}
+option{
+    font-weight: bold;
+
+}
+.imgButton {
+    float: left;
+    margin-right: 5px;
+    width: 30px;
+}
+
+.App {
+    text-align: center;
+}
+
+.App-link {
+    color: #5ce1e6;
+    font-size: small;
+}
+
+.App-logo {
+    width: 10%;
+    height: 10%;
+    pointer-events: none;
+}
+
+input {
+    width: 30vw;
+    height: 4vh;
+}
+
+.App-header {
+    background-color: #171616;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(15px + 2vmin);
+    color: white;
+}
+
+label {
+    font-size: xx-large;
+}
