@@ -1,11 +1,19 @@
 package com.example.showdoespigao;
 //normal
 
+import static java.lang.Float.parseFloat;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
 import android.os.Bundle;
 
+import com.android.volley.Request;
+import com.android.volley.RequestQueue;
+import com.android.volley.Response;
+import com.android.volley.VolleyError;
+import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
 import com.github.mikephil.charting.charts.BarChart;
 import com.github.mikephil.charting.components.Description;
 import com.github.mikephil.charting.components.Legend;
@@ -14,6 +22,8 @@ import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
 import com.github.mikephil.charting.data.BarEntry; 
 import com.github.mikephil.charting.utils.ColorTemplate;
+
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 
@@ -24,6 +34,8 @@ public class PlateiaActivity extends AppCompatActivity {
     int colorArray[]  = {Color.RED, Color.BLUE ,Color.GREEN, Color.YELLOW };
     //int[] colorClassArray = new int[] {Color.parseColor("#E91E63"),Color.parseColor("#E91E63"),Color.parseColor("#E91E63"),Color.parseColor("#E91E63")};
     String[] legendName = {"A", "B", "C", "D"};
+    String a,b,c,d;
+    float floatA, floatB, floatC, floatD;
 
 
 
@@ -32,7 +44,7 @@ public class PlateiaActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_plateia);
         BarChart barChart = findViewById(R.id.barchart);
-        getData();
+
         BarDataSet barDataSet = new BarDataSet(barArrayList, "Graph List");
         BarData barData = new BarData(barDataSet);
         barChart.setData(barData);
@@ -54,7 +66,49 @@ public class PlateiaActivity extends AppCompatActivity {
         legend.setTextColor(Color.WHITE);
         legend.setTextSize(22);
         legend.setFormSize(20);
+        String url = "http://localhost";
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest
+                (Request.Method.GET, url, null, new Response.Listener<JSONObject>() {
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        try {
+                            a =  response.getString("a");
+                        } catch (Exception ex) {
+                            ex.printStackTrace();
+                        }
+                        try {
+                            b =  response.getString("b");
+                        } catch (Exception ex) {
+                            ex.printStackTrace();
+                        }
+                        try {
+                            c =  response.getString("c");
+                        } catch (Exception ex) {
+                            ex.printStackTrace();
+                        }
+                        try {
+                            d =  response.getString("d");
+                        } catch (Exception ex) {
+                            ex.printStackTrace();
+                        }
+                    }
+                }, new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
 
+
+                    }
+                });
+
+        // Access the RequestQueue through your singleton class.
+        RequestQueue queue = Volley.newRequestQueue(this);
+        queue.add(jsonObjectRequest);
+        floatA = parseFloat(a);
+        floatB = parseFloat(b);
+        floatC = parseFloat(c);
+        floatD = parseFloat(d);
+
+        getData(floatA, floatB, floatC, floatD);
 
         LegendEntry[] legendEntries = new LegendEntry[4];
         for(int i=0; i < legendEntries.length; i++){
@@ -68,13 +122,12 @@ public class PlateiaActivity extends AppCompatActivity {
 
 
     }
-
-    private void getData(){
+    private void getData(float a, float b, float c, float d){
         barArrayList = new ArrayList();
-        barArrayList.add(new BarEntry(2f, 11));
-        barArrayList.add(new BarEntry(3f, 13));
-        barArrayList.add(new BarEntry(4f, 63));
-        barArrayList.add(new BarEntry(5f, 13));
+        barArrayList.add(new BarEntry(2f, floatA));
+        barArrayList.add(new BarEntry(3f, floatB));
+        barArrayList.add(new BarEntry(4f, floatC));
+        barArrayList.add(new BarEntry(5f, floatD));
 
     }
 }
