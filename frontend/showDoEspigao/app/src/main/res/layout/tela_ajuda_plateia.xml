@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#120F0F">
+
+    <TextView
+        android:id="@+id/textView52"
+        android:layout_width="159dp"
+        android:layout_height="38dp"
+        android:background="#C8B9B9"
+        android:text="Universitarios"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="137dp"
+        tools:layout_editor_absoluteY="50dp" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="388dp"
+        android:layout_height="85dp"
+        android:background="#DACACA"
+        android:text="Toque no Universitario para revelar suas opiniões sobre a alternativa correta"
+        android:textSize="25sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="143dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="129dp"
+        android:layout_height="252dp"
+        app:srcCompat="@drawable/whatsapp_image_2022_12_04_at_14_47_09"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="274dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="134dp"
+        android:layout_height="259dp"
+        app:srcCompat="@drawable/whatsapp_image_2022_12_04_at_14_47_09__1_"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="300dp" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="131dp"
+        android:layout_height="275dp"
+        app:srcCompat="@drawable/whatsapp_image_2022_12_04_at_14_47_09__2_"
+        tools:layout_editor_absoluteX="279dp"
+        tools:layout_editor_absoluteY="263dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="626dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
