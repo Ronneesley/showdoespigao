@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#091933">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Universitarios"
+        android:textColor="#E3D3D3"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="61dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toque no universitario para revelar suas opiniões sobre a alternativa correta"
+        android:textColor="#E3D3D3"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="133dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        tools:layout_editor_absoluteX="269dp"
+        tools:layout_editor_absoluteY="620dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="164dp"
+        android:layout_height="252dp"
+        app:srcCompat="@drawable/dsf"
+        tools:layout_editor_absoluteX="243dp"
+        tools:layout_editor_absoluteY="310dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="130dp"
+        android:layout_height="121dp"
+        app:srcCompat="@drawable/_sfds"
+        tools:layout_editor_absoluteX="265dp"
+        tools:layout_editor_absoluteY="302dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="134dp"
+        android:layout_height="231dp"
+        app:srcCompat="@drawable/_asda"
+        tools:layout_editor_absoluteX="135dp"
+        tools:layout_editor_absoluteY="361dp" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="168dp"
+        android:layout_height="280dp"
+        app:srcCompat="@drawable/_sda"
+        tools:layout_editor_absoluteX="-24dp"
+        tools:layout_editor_absoluteY="282dp" />
+
+    <ImageView
+        android:id="@+id/resposta2"
+        android:layout_width="103dp"
+        android:layout_height="117dp"
+        app:srcCompat="@drawable/_sfds"
+        tools:layout_editor_absoluteX="144dp"
+        tools:layout_editor_absoluteY="361dp" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="126dp"
+        android:layout_height="135dp"
+        app:srcCompat="@drawable/_sfds"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="298dp" />
+
+    <TextView
+        android:id="@+id/resposta1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A"
+        android:textColor="#D6C6C6"
+        android:textSize="45sp"
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="320dp" />
+
+    <TextView
+        android:id="@+id/textView53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="A"
+        android:textColor="#E3D3D3"
+        android:textSize="45sp"
+        tools:layout_editor_absoluteX="182dp"
+        tools:layout_editor_absoluteY="380dp" />
+
+    <TextView
+        android:id="@+id/resposta3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="B"
+        android:textColor="#E3D3D3"
+        android:textSize="45sp"
+        tools:layout_editor_absoluteX="319dp"
+        tools:layout_editor_absoluteY="320dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resposta"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="620dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
