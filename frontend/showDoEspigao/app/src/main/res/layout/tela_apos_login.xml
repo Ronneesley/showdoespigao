@@ -14,34 +14,37 @@
         android:layout_marginBottom="40dp"
         app:srcCompat="@drawable/logo" />
 
-    <TextView
-        android:id="@+id/textView1"
+    <Button
+        android:id="@+id/button1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Iniciar um novo quiz"
         android:layout_marginTop="40dp"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="35sp"/>
+        android:background="@android:color/opcoesquiz"
+        android:textSize="20sp"/>
 
-    <TextView
-        android:id="@+id/textView2"
+    <Button
+        android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Acessar as pontuações"
         android:layout_marginTop="40dp"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="35sp"/>
+        android:background="@android:color/transparent"
+        android:textSize="20sp"/>
 
-    <TextView
-        android:id="@+id/textView3"
+    <Button
+        android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:text="Sair do sistema"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="35sp" />
+        android:background="@android:color/transparent"
+        android:textSize="20sp" />
 
 </LinearLayout>
